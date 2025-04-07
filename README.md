@@ -112,8 +112,7 @@
 | Step              | Description                                                                  |
 |-------------------|------------------------------------------------------------------------------|
 | Entry Criteria    | Conditions required to start testing                                         |
-| Execution Steps   | Boot to OS, enter low power state, validate wake-up behavior, security validation, media playback 
-                                                                                       verification|
+| Execution Steps   | Boot to OS, enter low power state, validate wake-up behavior, security validation, media playback verification|
 | Pass/Fail Criteria| Define criteria for test success or failure                                  |
 | Automation/Manual | Specify whether the test is automated or manual                              |
 
