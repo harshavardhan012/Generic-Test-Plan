@@ -53,11 +53,10 @@
 
 ## 4. Model / Firmware / Infrastructure Dependencies
 
-| P1/P2 | Logical |  Task  | Emulation | Pass/Fail |    FW        | Model        |
-          Sync               Model       Criterion     Dependency   Dependency
-|-------|---------|--------|-----------|-----------|--------------|--------------|
-| P1    |         |        |           |           |              |              |
-| P2    |         |        |           |           |              |              |
+| P1/P2 | Logical Sync | Task  | Emulation Model | Pass/Fail Criterion | FW Dependency | Model Dependency |
+|-------|--------------|-------|------------------|----------------------|----------------|-------------------|
+| P1    |              |       |                  |                      |                |                   |
+| P2    |              |       |                  |                      |                |                   |
 
 ---
 
