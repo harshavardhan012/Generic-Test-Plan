@@ -26,6 +26,10 @@
 | Real Silicon Features  | Features only testable in silicon                  |
 | Workarounds            | Workarounds used in emulation                      |
 
+- Limitations in emulation (e.g., performance, cycle accuracy, missing components).
+- Features only testable in silicon.
+- Workarounds used in emulation.
+
 ---
 
 ## 3. Major New Features and Deltas
