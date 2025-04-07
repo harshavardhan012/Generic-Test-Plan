@@ -53,11 +53,11 @@
 
 ## 4. Model / Firmware / Infrastructure Dependencies
 
-| Component         | Dependency Details                                                       |
-|------------------|---------------------------------------------------------------------------|
-| Firmware          | Required firmware versions                                               |
-| Emulation Models  | Pre-silicon, post-silicon correlation, known limitations                 |
-| Infrastructure    | Debug tools, logging requirements, validation frameworks                 |
+| P1/P2 | Logical |  Task  | Emulation | Pass/Fail |    FW        | Model        |
+          Sync               Model       Criterion     Dependency   Dependency
+|-------|---------|--------|-----------|-----------|--------------|--------------|
+| P1    |         |        |           |           |              |              |
+| P2    |         |        |           |           |              |              |
 
 ---
 
