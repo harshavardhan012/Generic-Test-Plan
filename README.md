@@ -20,11 +20,11 @@
 
 ## 2. Emulation vs. Real Silicon Differences
 
-| Aspect                  | Details                                            |
-|------------------------|----------------------------------------------------|
-| Emulation Limitations  | Performance, cycle accuracy, missing components    |
-| Real Silicon Features  | Features only testable in silicon                  |
-| Workarounds            | Workarounds used in emulation                      |
+| Aspect                      | Details                                            |
+|-----------------------------|----------------------------------------------------|
+| Emulation Limitations       | Performance, cycle accuracy, missing components    |
+| Real Silicon Only Features  | Features only testable in silicon                  |
+| Workarounds                 | Workarounds used in emulation                      |
 
 - Limitations in emulation (e.g., performance, cycle accuracy, missing components).
 - Features only testable in silicon.
@@ -43,8 +43,11 @@
 | Security      | Security feature additions/modifications                              |
 
 - List new features introduced in this silicon generation across different domains (Multimedia IP, PMM, IO, BIOS, OS boot, Security, etc.), but only populate relevant sections for each test item.
-- Highlight modifications or improvements compared to previous versions  
-- Note dependencies on firmware or model updates
+- Highlight modifications or improvements compared to previous versions.
+- Any dependencies on firmware/model updates. | Domain | New Features/Improvements | |--------|-------------------------| | Multimedia IP | List new multimedia-related features. | | PMM | Power management module updates. | | IO | Changes in input/output processing. | | BIOS/OS Boot | Enhancements in boot process. | | Security | Security feature additions/modifications. |
+- List new features introduced in this silicon generation across different domains (Multimedia IP, PMM, IO, BIOS, OS boot, Security, etc.).
+- Highlight modifications or improvements compared to previous versions.
+- Any dependencies on firmware/model updates.
 
 ---
 
