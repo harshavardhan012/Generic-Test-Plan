@@ -1,5 +1,5 @@
 # Generic-Test-Plan
-SoC Emulation Test Plan
+
 # SoC Emulation Test Plan
 
 ## 1. Scope of Plan
