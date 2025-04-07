@@ -1,69 +1,67 @@
-# Generic-Test-Plan
-
 # SoC Emulation Test Plan
 
 ## 1. Scope of Plan
 
-**Objectives:**  
-Functionality validation, performance testing, power state transitions, security testing, etc.
+### Objectives
+- Functionality validation
+- Performance testing
+- Power state transitions
+- Security testing
 
-**Scope:**  
-Define what is in scope and out of scope.
+### Scope
+- Define what is in scope and out of scope
 
-**Target Platforms:**  
-- Emulation  
-- FPGA  
+### Target Platforms
+- Emulation
+- FPGA
 - Silicon
 
 ---
 
 ## 2. Emulation vs. Real Silicon Differences
 
-| Aspect                   | Details                                               |
-|--------------------------|--------------------------------------------------------|
-| Emulation Limitations    | Performance, cycle accuracy, missing components.      |
-| Real Silicon Only Features | Features only testable in silicon.                  |
-| Workarounds              | Workarounds used in emulation.                        |
+| Aspect                  | Details                                            |
+|------------------------|----------------------------------------------------|
+| Emulation Limitations  | Performance, cycle accuracy, missing components    |
+| Real Silicon Features  | Features only testable in silicon                  |
+| Workarounds            | Workarounds used in emulation                      |
 
 ---
 
 ## 3. Major New Features and Deltas
 
-| Domain         | New Features/Improvements                          |
-|----------------|-----------------------------------------------------|
-| Multimedia IP  | List new multimedia-related features.              |
-| PMM            | Power management module updates.                   |
-| IO             | Changes in input/output processing.                |
-| BIOS/OS Boot   | Enhancements in boot process.                      |
-| Security       | Security feature additions/modifications.         |
+| Domain        | New Features/Improvements                        |
+|---------------|--------------------------------------------------|
+| Multimedia IP | List new multimedia-related features             |
+| PMM           | Power management module updates                  |
+| IO            | Changes in input/output processing               |
+| BIOS/OS Boot  | Enhancements in boot process                     |
+| Security      | Security feature additions/modifications         |
 
-- Highlight modifications or improvements compared to previous versions.  
-- Any dependencies on firmware/model updates.
+- Highlight modifications or improvements compared to previous versions  
+- Note dependencies on firmware or model updates
 
 ---
 
-## 4. Model/Firmware/Infrastructure Dependencies
+## 4. Model / Firmware / Infrastructure Dependencies
 
-| Component         | Dependency Details                                         |
-|------------------|------------------------------------------------------------|
-| Firmware          | Required firmware versions.                                |
-| Emulation Models  | Pre-silicon, post-silicon correlation, known limitations.  |
-| Infrastructure    | Debug tools, logging requirements, validation frameworks.  |
-
-- Define required firmware versions.  
-- Maturity of emulation models.  
-- Hardware/software infrastructure dependencies.
+| Component         | Dependency Details                                                       |
+|------------------|---------------------------------------------------------------------------|
+| Firmware          | Required firmware versions                                               |
+| Emulation Models  | Pre-silicon, post-silicon correlation, known limitations                 |
+| Infrastructure    | Debug tools, logging requirements, validation frameworks                 |
 
 ---
 
 ## 5. Test Configurations & Platforms
 
-**General Requirements:**
-- Define key test environments used in validation.
-- Specify whether testing occurs in full SoC emulation, subsystem-level, or real silicon.
-- Note any special configurations such as testing with/without real PHY.
+### Test Environment Requirements
+- Full SoC emulation
+- Subsystem-level testing
+- Real silicon
+- Testing with/without real PHY
 
-**Test Configuration Table:**
+### Test Configuration Table
 
 | Test Feature | Task   | Model Requirement | Firmware Requirement |
 |--------------|--------|-------------------|----------------------|
@@ -71,49 +69,51 @@ Define what is in scope and out of scope.
 | Feature B    | Task 2 | Model Y           | FW Version Z         |
 | Feature C    | Task 3 | Model Z           | FW Version W         |
 
-**Hardware/Software Dependency Details:**
-- Hardware Setup: Required boards, emulation models, or silicon
-- Firmware: List required firmware versions
-- Debug Tools: Debuggers, log analyzers, tracing tools
-- Validation Framework: Automation tools or test scripts used
+### Hardware/Software Dependency Details
 
-**Test Setups:**
+- **Hardware Setup:** Required boards, emulation models, or silicon  
+- **Firmware:** List required firmware versions  
+- **Debug Tools:** Debuggers, log analyzers, tracing tools  
+- **Validation Framework:** Automation tools or test scripts
 
-| Test Setup                  | Description                                           |
-|-----------------------------|-------------------------------------------------------|
-| Full SoC Emulation          | Complete system-level testing.                        |
-| Subsystem-Level Testing     | Individual component verification.                    |
-| Emulation with/without PHY  | Evaluating real vs. emulated PHY performance.         |
-| Silicon Testing Conditions  | Criteria and configurations for real silicon tests.   |
-| PMM Example                 | Testing power state transitions, voltage/frequency scaling, low-power entry/exit behavior. |
+### Test Setups
+
+| Test Setup                   | Description                                                      |
+|-----------------------------|------------------------------------------------------------------|
+| Full SoC Emulation          | Complete system-level testing                                    |
+| Subsystem-Level Testing     | Individual component verification                                |
+| Emulation with/without PHY  | Evaluating real vs. emulated PHY performance                     |
+| Silicon Testing Conditions  | Criteria and configurations for real silicon tests               |
+| PMM Example                 | Power state transitions, voltage/frequency scaling, low-power entry/exit |
 
 ---
 
 ## 6. Test Sequence
 
-| Step            | Description                                                                 |
-|------------------|-------------------------------------------------------------------------------|
-| Entry Criteria   | Conditions required to start testing.                                        |
-| Execution Steps  | Boot to OS, enter low power state, validate wake-up behavior, security validation steps, media playback verification. |
-| Pass/Fail Criteria | Define criteria for test success or failure.                              |
-| Automation/Manual | Specify whether the test is automated or manual.                          |
+| Step              | Description                                                                  |
+|-------------------|------------------------------------------------------------------------------|
+| Entry Criteria    | Conditions required to start testing                                         |
+| Execution Steps   | Boot to OS, enter low power state, validate wake-up behavior, security validation, media playback |
+| Pass/Fail Criteria| Define criteria for test success or failure                                  |
+| Automation/Manual | Specify whether the test is automated or manual                              |
 
 ---
 
 ## 7. Known Issues & Debug Hooks
 
-| Issue/Hook       | Details                                                                      |
-|------------------|------------------------------------------------------------------------------|
-| Known Issues     | Document known issues or expected failures. Reference Jira IDs for tracking. |
-| Debug Mechanisms | Logs, traces, breakpoints, security validation tools, profiling utilities.  |
+| Issue/Hook       | Details                                                       |
+|------------------|---------------------------------------------------------------|
+| Known Issues     | Document known issues or expected failures. Reference Jira IDs |
+| Debug Mechanisms | Logs, traces, breakpoints, security validation, profiling tools|
 
 ---
 
 ## 8. Documentation & Reporting
 
-| Aspect        | Details                                         |
-|----------------|-------------------------------------------------|
-| Documentation | Define how test results will be documented.     |
-| Reporting     | Specify reporting format and frequency.         |
-| Escalation    | Outline escalation process for failures.        |
+| Aspect        | Details                                          |
+|---------------|--------------------------------------------------|
+| Documentation | How test results will be documented              |
+| Reporting     | Reporting format and frequency                   |
+| Escalation    | Escalation process for failures                  |
 
+---
