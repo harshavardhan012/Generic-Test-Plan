@@ -58,6 +58,12 @@
 | P1    |              |       |                  |                      |                |                   |
 | P2    |              |       |                  |                      |                |                   |
 
+- Define required firmware versions.
+- Maturity of emulation models (pre-silicon, post-silicon correlation, known limitations).
+- Hardware/software infrastructure dependencies (e.g., debug tools, logging requirements, validation frameworks). | Component | Dependency Details | |------------|------------------| | Firmware | Required firmware versions. | | Emulation Models | Pre-silicon, post-silicon correlation, known limitations. | | Infrastructure | Debug tools, logging requirements, validation frameworks. |
+- Required firmware versions.
+- Maturity of emulation models (pre-silicon, post-silicon correlation, known limitations).
+- Hardware/software infrastructure dependencies (e.g., debug tools, logging requirements, validation frameworks).
 ---
 
 ## 5. Test Configurations & Platforms
