@@ -57,15 +57,26 @@
 
 - Required firmware versions.
 - Maturity of emulation models (pre-silicon, post-silicon correlation, known limitations).
+
+### Hardware/Software Dependency Details
+
+| Hardware/Software Dependency| Description                                                      |
+|-----------------------------|------------------------------------------------------------------|
+| Hardware Setup              | Specify required boards, emulation models, or silicon.           |
+| Firmware                    | List required firmware versions.                                 |
+| Debug Tools                 | Mention debuggers, log analyzers, and tracing tools.             |
+| Validation Framework        | Identify automation tools or test scripts used.                  |
+
 - Hardware/software infrastructure dependencies (e.g., debug tools, logging requirements, validation frameworks).
 ---
 
 ## 5. Test Configurations & Platforms
 
 ### Test Environment Requirements
+- Ensure alignment with hardware and software dependencies.
 - Define key test environments used in validation.
 - Specify whether testing occurs in full SoC emulation, subsystem-level, or real silicon.
-- Note any special configurations such as testing with/without real PHY.
+- Note any special configurations such as testing with/without real PHY, hybrid model, Bare Metal.
 
 ### Test Configuration Table
 
@@ -75,19 +86,6 @@
 | Feature B    | Task 2 | Model Y           | FW Version Z         |
 | Feature C    | Task 3 | Model Z           | FW Version W         |
 
-- Ensure alignment with hardware and software dependencies.
-- Define key test environments used in validation.
-- Specify whether testing occurs in full SoC emulation, subsystem-level, or real silicon.
-- Note any special configurations such as testing with/without real PHY, hybrid model, Bare Metal.
-### Hardware/Software Dependency Details
-
-| Hardware/Software Dependency| Description                                                      |
-|-----------------------------|------------------------------------------------------------------|
-| Hardware Setup              | Specify required boards, emulation models, or silicon.           |
-| Firmware                    | List required firmware versions.                                 |
-| Debug Tools                 | Mention debuggers, log analyzers, and tracing tools.             |
-| Validation Framework        | Identify automation tools or test scripts used.                  |
- 
 ---
 
 ## 6. Test Sequence
@@ -113,7 +111,6 @@
 | Known Issues     | Document known issues or expected failures. Reference Jira IDs for tracking. |
 | Debug Mechanisms | Logs, traces, breakpoints, security validation tools, profiling utilities.   |
 
-- Document known issues or expected failures, referencing Jira IDs for tracking.
 - List available debug mechanisms (e.g., logs, traces, breakpoints, security validation tools, profiling utilities).
   
 ---
@@ -126,7 +123,4 @@
 | Reporting     | Specify reporting format and frequency.          |
 | Escalation    | Outline escalation process for failures.         |
 
-- Define how test results will be documented.
-- Specify reporting format and frequency.
-- Outline escalation process for failures.
 ---
