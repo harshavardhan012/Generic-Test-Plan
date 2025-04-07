@@ -78,7 +78,7 @@
 - Ensure alignment with hardware and software dependencies.
 - Define key test environments used in validation.
 - Specify whether testing occurs in full SoC emulation, subsystem-level, or real silicon.
-- Note any special configurations such as testing with/without real PHY.
+- Note any special configurations such as testing with/without real PHY, hybrid model, Bare Metal.
 ### Hardware/Software Dependency Details
 
 | Hardware/Software Dependency| Description                                                      |
@@ -87,12 +87,7 @@
 | Firmware                    | List required firmware versions.                                 |
 | Debug Tools                 | Mention debuggers, log analyzers, and tracing tools.             |
 | Validation Framework        | Identify automation tools or test scripts used.                  |
-
-- Define key test environments used in validation.
-- Specify whether testing occurs in full SoC emulation, subsystem-level, or real silicon.
-- Note any special configurations such as testing with/without real PHY, hybrid model, Bare Metal.
-- Specify test equipment, software tools, and configurations required.
-  
+ 
 ---
 
 ## 6. Test Sequence
