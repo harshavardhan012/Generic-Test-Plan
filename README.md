@@ -125,19 +125,27 @@
 
 ## 7. Known Issues & Debug Hooks
 
-| Issue/Hook       | Details                                                       |
-|------------------|---------------------------------------------------------------|
-| Known Issues     | Document known issues or expected failures. Reference Jira IDs |
-| Debug Mechanisms | Logs, traces, breakpoints, security validation, profiling tools|
+| Issue/Hook       | Details                                                                      |
+|------------------|------------------------------------------------------------------------ - - -|
+| Known Issues     | Document known issues or expected failures. Reference Jira IDs for tracking. |
+| Debug Mechanisms | Logs, traces, breakpoints, security validation tools, profiling utilities.   |
 
+- Document known issues or expected failures, referencing Jira IDs for tracking.
+- List available debug mechanisms (e.g., logs, traces, breakpoints, security validation tools, profiling utilities). | Issue/Hook | Details | |------------|--------| | Known Issues | Document known issues or expected failures. | | Debug Mechanisms | Logs, traces, breakpoints, security validation tools, profiling utilities. |
+- Document known issues or expected failures.
+- List available debug mechanisms (e.g., logs, traces, breakpoints, security validation tools, profiling utilities).
+  
 ---
 
 ## 8. Documentation & Reporting
 
 | Aspect        | Details                                          |
 |---------------|--------------------------------------------------|
-| Documentation | How test results will be documented              |
-| Reporting     | Reporting format and frequency                   |
-| Escalation    | Escalation process for failures                  |
+| Documentation | Define how test results will be documented.      |
+| Reporting     | Specify reporting format and frequency.          |
+| Escalation    | Outline escalation process for failures.         |
 
+- Define how test results will be documented.
+- Specify reporting format and frequency.
+- Outline escalation process for failures.
 ---
