@@ -87,11 +87,6 @@
 - Note any special configurations such as testing with/without real PHY.
 ### Hardware/Software Dependency Details
 
-//- **Hardware Setup:** Required boards, emulation models, or silicon  
-//- **Firmware:** List required firmware versions  
-//- **Debug Tools:** Debuggers, log analyzers, tracing tools  
-//- **Validation Framework:** Automation tools or test scripts
-
 | Hardware/Software Dependency| Description                                                      |
 |-----------------------------|------------------------------------------------------------------|
 | Hardware Setup              | Specify required boards, emulation models, or silicon.           |
@@ -117,9 +112,15 @@
 | Step              | Description                                                                  |
 |-------------------|------------------------------------------------------------------------------|
 | Entry Criteria    | Conditions required to start testing                                         |
-| Execution Steps   | Boot to OS, enter low power state, validate wake-up behavior, security validation, media playback |
+| Execution Steps   | Boot to OS, enter low power state, validate wake-up behavior, security validation, media playback 
+                                                                                       verification|
 | Pass/Fail Criteria| Define criteria for test success or failure                                  |
 | Automation/Manual | Specify whether the test is automated or manual                              |
+
+- Describe test entry and exit criteria.
+- Define Pass/Fail criteria for each test.
+- Provide a sequence of test execution (e.g., boot to OS, enter low power state, validate wake-up behavior, security validation steps, media playback verification).
+- Specify automation/manual execution.
 
 ---
 
