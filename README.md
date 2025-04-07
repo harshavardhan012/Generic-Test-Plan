@@ -44,11 +44,8 @@
 
 - List new features introduced in this silicon generation across different domains (Multimedia IP, PMM, IO, BIOS, OS boot, Security, etc.), but only populate relevant sections for each test item.
 - Highlight modifications or improvements compared to previous versions.
-- Any dependencies on firmware/model updates. | Domain | New Features/Improvements | |--------|-------------------------| | Multimedia IP | List new multimedia-related features. | | PMM | Power management module updates. | | IO | Changes in input/output processing. | | BIOS/OS Boot | Enhancements in boot process. | | Security | Security feature additions/modifications. |
-- List new features introduced in this silicon generation across different domains (Multimedia IP, PMM, IO, BIOS, OS boot, Security, etc.).
-- Highlight modifications or improvements compared to previous versions.
 - Any dependencies on firmware/model updates.
-
+  
 ---
 
 ## 4. Model / Firmware / Infrastructure Dependencies
@@ -58,9 +55,6 @@
 | P1    |              |       |                  |                      |                |                   |
 | P2    |              |       |                  |                      |                |                   |
 
-- Define required firmware versions.
-- Maturity of emulation models (pre-silicon, post-silicon correlation, known limitations).
-- Hardware/software infrastructure dependencies (e.g., debug tools, logging requirements, validation frameworks). | Component | Dependency Details | |------------|------------------| | Firmware | Required firmware versions. | | Emulation Models | Pre-silicon, post-silicon correlation, known limitations. | | Infrastructure | Debug tools, logging requirements, validation frameworks. |
 - Required firmware versions.
 - Maturity of emulation models (pre-silicon, post-silicon correlation, known limitations).
 - Hardware/software infrastructure dependencies (e.g., debug tools, logging requirements, validation frameworks).
@@ -96,13 +90,7 @@
 
 - Define key test environments used in validation.
 - Specify whether testing occurs in full SoC emulation, subsystem-level, or real silicon.
-- Note any special configurations such as testing with/without real PHY, hybrid model,
-- Ensure alignment with hardware and software dependencies. | Test Category | Example (PMM) | |--------------|--------------| | Full SoC Emulation | Testing overall system power states, including transitions and wake-up behavior. | | Subsystem-Level Testing | Validating power domains, voltage/frequency scaling within PMM. | | Emulation with/without Real PHY | Comparing power impact with and without real PHY components. | | Silicon Testing Conditions | Measuring actual power consumption and efficiency on real silicon. |
-- Define different test setups relevant to each domain (e.g., full SoC emulation, subsystem-level testing, emulator with/without real PHY, silicon testing conditions).
-- Specify test equipment, software tools, and configurations required. | Test Setup | Description | |-----------|------------| | Full SoC Emulation | Complete system-level testing. | | Subsystem-Level Testing | Individual component verification. | | Emulation with/without Real PHY | Evaluating real vs. emulated PHY performance. | | Silicon Testing Conditions | Criteria and configurations for real silicon tests. | | PMM Example | Testing power state transitions, voltage/frequency scaling, low-power entry/exit behavior. |
-- Define different test setups (e.g., full SoC emulation, subsystem-level testing, emulator with/without real PHY, silicon testing conditions).
-- Specify test equipment, software tools, and configurations required. | Test Setup | Description | |-----------|------------| | Full SoC Emulation | Complete system-level testing. | | Subsystem-Level Testing | Individual component verification. | | Emulation with/without Real PHY | Evaluating real vs. emulated PHY performance. | | Silicon Testing Conditions | Criteria and configurations for real silicon tests. |
-- Define different test setups (e.g., full SoC emulation, subsystem-level testing, emulator with/without real PHY, silicon testing conditions).
+- Note any special configurations such as testing with/without real PHY, hybrid model, Bare Metal.
 - Specify test equipment, software tools, and configurations required.
   
 ---
@@ -131,8 +119,6 @@
 | Debug Mechanisms | Logs, traces, breakpoints, security validation tools, profiling utilities.   |
 
 - Document known issues or expected failures, referencing Jira IDs for tracking.
-- List available debug mechanisms (e.g., logs, traces, breakpoints, security validation tools, profiling utilities). | Issue/Hook | Details | |------------|--------| | Known Issues | Document known issues or expected failures. | | Debug Mechanisms | Logs, traces, breakpoints, security validation tools, profiling utilities. |
-- Document known issues or expected failures.
 - List available debug mechanisms (e.g., logs, traces, breakpoints, security validation tools, profiling utilities).
   
 ---
