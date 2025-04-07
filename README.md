@@ -126,7 +126,7 @@
 ## 7. Known Issues & Debug Hooks
 
 | Issue/Hook       | Details                                                                      |
-|------------------|------------------------------------------------------------------------ - - -|
+|------------------|-------------------------------------------------------------------------------|
 | Known Issues     | Document known issues or expected failures. Reference Jira IDs for tracking. |
 | Debug Mechanisms | Logs, traces, breakpoints, security validation tools, profiling utilities.   |
 
