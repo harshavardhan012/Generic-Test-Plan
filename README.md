@@ -50,10 +50,10 @@
 
 ## 4. Model / Firmware / Infrastructure Dependencies
 
-| P1/P2 | Logical Sync | Task  | Emulation Model | Pass/Fail Criterion | FW Dependency | Model Dependency |
-|-------|--------------|-------|------------------|----------------------|----------------|-------------------|
-| P1    |              |       |                  |                      |                |                   |
-| P2    |              |       |                  |                      |                |                   |
+| P1/P2 | Logical Sync | Task  | Emulation Model | Pass/Fail Criterion | FW Dependency | Model Dependency | Start Date | End Date |
+|-------|--------------|-------|------------------|----------------------|----------------|-------------------|-------------|-----------|
+| P1    |              |       |                  |                      |                |                   |             |           |
+| P2    |              |       |                  |                      |                |                   |             |           |
 
 - Required firmware versions.
 - Maturity of emulation models (pre-silicon, post-silicon correlation, known limitations).
@@ -68,27 +68,10 @@
 | Validation Framework        | Identify automation tools or test scripts used.                  |
 
 - Hardware/software infrastructure dependencies (e.g., debug tools, logging requirements, validation frameworks).
----
-
-## 5. Test Configurations & Platforms
-
-### Test Environment Requirements
-- Ensure alignment with hardware and software dependencies.
-- Define key test environments used in validation.
-- Specify whether testing occurs in full SoC emulation, subsystem-level, or real silicon.
-- Note any special configurations such as testing with/without real PHY, hybrid model, Bare Metal.
-
-### Test Configuration Table
-
-| Test Feature | Task   | Model Requirement | Firmware Requirement |
-|--------------|--------|-------------------|----------------------|
-| Feature A    | Task 1 | Model X           | FW Version Y         |
-| Feature B    | Task 2 | Model Y           | FW Version Z         |
-| Feature C    | Task 3 | Model Z           | FW Version W         |
 
 ---
 
-## 6. Test Sequence
+## 5. Test Sequence
 
 | Step              | Description                                                                  |
 |-------------------|------------------------------------------------------------------------------|
@@ -104,7 +87,7 @@
 
 ---
 
-## 7. Known Issues & Debug Hooks
+## 6. Known Issues & Debug Hooks
 
 | Issue/Hook       | Details                                                                      |
 |------------------|-------------------------------------------------------------------------------|
@@ -115,7 +98,7 @@
   
 ---
 
-## 8. Documentation & Reporting
+## 7. Documentation & Reporting
 
 | Aspect        | Details                                          |
 |---------------|--------------------------------------------------|
